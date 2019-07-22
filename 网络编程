@@ -1,0 +1,57 @@
+网络通信：用的是udp和tcp
+  
+
+ip： 找到目标电脑
+端口：提供端口找到应用程序，就是一个通道
+进程：一个程序没有运行之前叫做程序，运行起来叫做进程
+
+网络通信其实就是，电脑主机的进程在相互通信
+
+端口怎么分配：
+  知名端口： 80端口分配给http，21端口分配给FTP,小于1024的就是 0--1023
+  动态端口：大于从1024-65535
+怎么看端口：
+  netstat -an 查看端口状态
+  lsof -i [tcp/udp]:2425
+
+socket简介： 是进程间通信的一种方式，它能实现不同主机间的进程间通信，(只要是有网络都用的是socket)
+  1.不同电脑上的进程之间如何通信
+   创建socket
+   import socket
+   socket.socket(AddressFmaily, Type) # ipv4 or ipv6，upd或者是tcp
+   socket.socket(socket.AF_INET, socket.SOCK_STREAM)  // AF_INET是ipv4的意思 SOCK_STREAM是tcp的意思
+   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) // ipv4 udp
+   s.close()
+  2.使用socket
+    ```
+    import socket
+    def main():
+      # 创建一个udp套接字
+      upd_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+      # 可以使用套接字收发数据
+      udp_socket.sendto(b"haha--lijun", ("192.168.3.111", 8080)) # 对方的ip和端口 
+      # 关闭套接字
+      upd_socket.close()
+     if __name__ == "__main__":
+      main()
+    ```
+    在网络助手就可以查看了
+    sudo dhclient : 分配ip给你的
+    
+    接收数据：
+      from socket import *
+      # 创建socket
+      upd_socket = socket(AF_INET, SOCK_DGRAM)
+      # 绑定本地的相关信息，如果一个网络程序不绑定，则系统会随机分配
+      local_addr = ('', 7788) # ip地址和端口号，ip一般不用写
+      udp_socked.bind(local_addr)
+      
+      #3.等待接收对方发送的数据
+      recv_data = udp_socket.recvfrom(1024) # 1024表示本次接收的最大的字节数
+      #4.显示接收到的数据
+      print(recv_data[0].decode('gbk))
+      #5.关闭socket
+      udp_socket.close()
+      
+    
+  
