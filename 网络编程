@@ -53,5 +53,23 @@ socket简介： 是进程间通信的一种方式，它能实现不同主机间�
       #5.关闭socket
       udp_socket.close()
       
+    同一时间，不同程序不能使用同一个端口
     
+    for example：
+      udp聊天器：
+      ```
+      import socket
+      def main():
+        udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        dest_ip = input("请输入对方的ip:)
+        send_data = int(input("请输入对方端口port:"))
+        
+        udp_socket.sendto(send_data.encode("utf-8"), (dest_ip, dest_port))
+        
+        udp_socket.close()
+        
+      ```
+      如果本地两个程序想通过网络共享数据 就是用来本地环回 127.0.0.1
+      
+      
   
