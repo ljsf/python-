@@ -127,7 +127,7 @@ socket简介： 是进程间通信的一种方式，它能实现不同主机间�
     5.recv/send接收发送数据
     
     有一个监听socket 负责等待有新的客户端进行链接
-    accept产生的新的socket用来，为客户端服务
+    accept产生的新的socket用来，为客户端服务。
     
     
      
