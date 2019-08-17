@@ -1,0 +1,10 @@
+OCR： Optical Character Recognition
+
+http://pythonabc.org/
+
+1.brew install tesseract
+2.tesseract imgName result or with tesseract imgName stdout
+3.需要安装中文字体，在tesseract-ocr中国tessdata，中去下载，放入将文件拷贝到到：/usr/local/Cellar/tesseract/3.04.01_2/share/tessdata目录下下
+4.tesseract --help
+5.tesseract --list-langs 查看本地存在的语言库
+6.tesseract -l chi_sim imgName result ：设置语言库
