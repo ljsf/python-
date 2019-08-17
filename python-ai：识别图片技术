@@ -14,3 +14,6 @@ http://pythonabc.org/
 1.pipenv install pytesseract && pipenv install Pillow
 2.pyocr: 是付费的
 
+
+可以训练文字，训练库
+把PDF转化成图片用的是Wand
