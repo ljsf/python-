@@ -8,3 +8,9 @@ http://pythonabc.org/
 4.tesseract --help
 5.tesseract --list-langs 查看本地存在的语言库
 6.tesseract -l chi_sim imgName result ：设置语言库
+
+
+安装python有关的库 可以使用PyOCR和PyTesseract内核都是Tesseract
+1.pipenv install pytesseract && pipenv install Pillow
+2.pyocr: 是付费的
+
