@@ -99,3 +99,6 @@ for num in range(1,101) # 1--100
   3.不能与关键字重名
   
 pyc文件： c是compiled
+
+导入之后自动生产pyc编译之后的文件
+
