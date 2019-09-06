@@ -78,8 +78,9 @@ print(sum)
 
 for num in [1,2,3,4]
 for num in range(1,101) # 1--100
-函数： 
-  def
+函数： 就是封装了一对代码 函数注释里面只能用要引号注释不能用井号 只能用三个连续的引号
+  def main():
+    print("hello")
   
   
 
