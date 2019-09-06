@@ -102,3 +102,23 @@ pyc文件： c是compiled
 
 导入之后自动生产pyc编译之后的文件
 
+高级变量类型：
+  列表：一个序列 list(列表) 相当于数组 存储一串信息 name_list = ["list", "wangwu"] 索引：
+  元组：一个序列  
+  字典：一个序列 
+  字符串：一个序列
+  公共方法：
+  变量高级：
+
+name_list = ['one', 'two', 'three']
+len(name_list)
+name_list.append
+name_list.clear
+
+name_list2 = name_list.copy()
+name_list.index('1')  # 查询里面有没有值
+name_list.insert(3, '3')
+
+name_list.pop() 找出最大的值
+Python count() 方法用于统计字符串里某个字符出现的次数。可选参数为在字符串搜索的开始与结束位置。
+extend() 函数用于在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）。
