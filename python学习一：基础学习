@@ -1,0 +1,21 @@
+变量的基本使用：
+变量名 = 值
+
+qq_number = "12345678"
+type(qq_number) # str   use: type(name)
+
+True False首字母要大写
+True默认是1 False是0
+
+str = "hello"
+str * 50  # 输出50个hello
+
+变量输入： input("please input your password:")  变量转换：input("123") # 123 float()
+
+
+格式化输出：
+%s  字符串   # name = "lijun" print("my name is %s" % name)
+%d  有符号十进制整数 %06d表示输出显示位数 不足的地方使用0补全  # print("%d" % num) print("%06d" % 2)
+%f 浮点数 %.02f  表示小数点只显示两位  # print("%f" % 2) print("%.2f" % 2)
+%% 输出%   # print("%.2f%%" % 2)  2.00%
+
