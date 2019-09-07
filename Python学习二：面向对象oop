@@ -30,5 +30,8 @@ class 类名:
 
   面向对象三大特性： 封装 继承 多态
   
+  继承 class Dog(Animals):
+  
+  
    
    
