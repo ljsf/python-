@@ -14,7 +14,21 @@ class 类名:
     pass
     
    对象变量 = 类名()
-   
+ 
+ 
+ 面向对象封装案例：把属性和方法放在类中
+ class Person:  
+  def __init__(self, name, weight):
+    self.name = name  # 右侧是变量，右侧是形参，左侧是实参
+    self.weight = weight
+    
+    
+  xiaoming = Person()
+  def __str__():
+    return "hello"
+  print(xiaoming) # hello
+
+  面向对象三大特性： 封装 继承 多态
   
    
    
