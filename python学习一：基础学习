@@ -151,6 +151,24 @@ for i in a:
   print(i['name'])  # 字典里面代码是列表
   
 
+变量进阶：
+  变量和数据是分开
+  变量引用：
+  a = 1
+  b = a
+  id(a) 和 id(b)是一样的 默认是直接引用
+  a = 2 # 相当于要重新开辟一个空间
+ 
+=================Linux中执行Python脚本====================
+
+#!/usr/bin/python3
+
+这是指定python脚本的解释器，然后给test.py添加可执行权限并执行
+
+chmod +x test.py
+./test.py
+
+
 
 
 
